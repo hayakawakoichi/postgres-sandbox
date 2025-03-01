@@ -1,0 +1,19 @@
+{
+  "name": "postgres-sandbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node src/test/insertLogs.js",
+    "start": "docker-compose up -d",
+    "logs": "docker-compose logs -f",
+    "stop": "docker-compose down",
+    "psql": "docker exec -it postgres_db psql -U postgres -d postgres"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "pg": "^8.13.3"
+  }
+}
