@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node src/test/insertLogs.js",
+    "many": "node src/test/insertManyLogs.js",
     "start": "docker-compose up -d",
     "logs": "docker-compose logs -f",
     "stop": "docker-compose down",
